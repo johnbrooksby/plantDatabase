@@ -1,8 +1,10 @@
-import { useState } from 'react'
+// import { useState } from 'react'
+import Picturecard from './components/pictureCard'
 import './App.css'
 
-function App() {
 
+function App() {
+    
   return (
     
     <div>
@@ -53,24 +55,28 @@ function App() {
         </section>
         <section id="searchRes">
             <a><section className="navbox left top-left">
-            <img id="Evergreen" className="navimg" alt="evergreen pic" src="https://drive.google.com/uc?export=view&id=1sTiLxNKCu7xVp5UPNTpXTevz-O4IVE3O"/>
-                <h3>Evergreens</h3>
+                <Picturecard id="Evergreen" name="Evergreens" />
+            {/* <img id="Evergreen" className="navimg" alt="evergreen pic" src=""/>
+                <h3>Evergreens</h3> */}
             </section></a><br/>
             <a><section className="navbox right top-right">
-                <img id='Deciduous' className="navimg" alt="deciduous pic" src="https://drive.google.com/uc?export=view&id=1BQ-CT-YCViaI3euSffLOFcKXzACZhCMK"/>
-                <h3>Deciduous</h3>            
+                <Picturecard id="Deciduous" name="Deciduous" />
+                {/* <img id='Deciduous' className="navimg" alt="deciduous pic" src=""/>
+                <h3>Deciduous</h3>             */}
             </section></a><br/>
             <a><section className="navbox left bottom-left">
-                <img id='Flower' className="navimg" alt="flower pic" src="https://drive.google.com/uc?export=view&id=1YOVhO6lZgY2Xqc35MDIpsFhcu7GRw73Q"/>
-                <h3>Flowers</h3>
+                <Picturecard id="Flower" name="Flowers" />
+                {/* <img id='Flower' className="navimg" alt="flower pic" src="/flower.jpg"/>
+                <h3>Flowers</h3> */}
             </section></a><br/>
             <a><section className="navbox right bottom-right">
-                <img id='Houseplant' className="navimg" alt="houseplant pic" src="https://drive.google.com/uc?export=view&id=1UkaNCA44MiFGncuA8EhGIpOe4NokbXln"/>
-                <h3>Houseplants</h3>
+                <Picturecard id="Houseplant" name="Houseplants" />
+                {/* <img id='Houseplant' className="navimg" alt="houseplant pic" src="/houseplant.jpg"/>
+                <h3>Houseplants</h3> */}
             </section></a>
         </section>
     <footer>
-        <a style={{textDecoration :"none"}} href="https://www.linkedin.com/in/john-brooksby-fullstackdeveloper/" target="_blank"><p id="foot">Copywrite2023 John Brooksby</p></a>
+        <a style={{textDecoration :"none"}} href="https://www.linkedin.com/in/john-brooksby-fullstackdeveloper/" target="_blank"><p id="foot">Copyright 2023 John Brooksby</p></a>
         <p>Background Photo by <a style={{color: "#ffe8c2"}} href="https://unsplash.com/fr/@xteemu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Teemu Paananen</a> on <a style={{color: "#ffe8c2"}} href="https://unsplash.com/photos/OOE4xAnBhKo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         </p>
     </footer>
